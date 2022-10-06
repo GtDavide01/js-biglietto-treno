@@ -30,14 +30,14 @@ let priceBaseDiscount  ;
 if (userAge <= 18 ){
     priceBaseDiscount = priceBase - discount20
     console.log(priceBaseDiscount);
-    message = "Il prezzo del suo biglietto è scontato dl 20% ed è " + priceBaseDiscount.toFixed(2) + "€";
+    message = "Il prezzo del suo biglietto è scontato del 20% ed è " + priceBaseDiscount.toFixed(2) + "€";
     console.log(message);
 } 
 // if se l'utente ha più di 85 anni 
 else if (userAge >= 65 ){
     priceBaseDiscount = priceBase - discount40;
     console.log(priceBaseDiscount); 
-    message = "Il prezzo del suo biglietto è scontato dl 40% ed è " + priceBaseDiscount.toFixed(2) + "€";
+    message = "Il prezzo del suo biglietto è scontato del 40% ed è " + priceBaseDiscount.toFixed(2) + "€";
     console.log(message);
 }
 // altrimenti stampa prezzo non scontato 
@@ -49,3 +49,9 @@ else {
 //Output prezzo finale in forma umana ( massimo due decimali )
 
 document.getElementById("result").innerHTML=message;
+
+
+//
+document.getElementById("userKm").innerHTML="I kilometri percorsi dal passaggero sono " + userKm ;
+document.getElementById("userAge").innerHTML="L'età del passegero è " + userAge + " anni ";
+

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 ;
+}
+
+body{
+    display: flex;
+    font-family: 'Roboto' , sans-serif;
+    background-color: aqua;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket{
+    border: 2px solid green;
+    border-radius: 1.5rem;
+    background-color: aliceblue;
+    margin: 0 auto ;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ticket p{
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-style: oblique;
+}
